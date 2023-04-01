@@ -79,7 +79,7 @@ import email
 
 def read_email_from_gmail():
         mail = imaplib.IMAP4_SSL('imap.gmail.com')
-        mail.login('tripathimihir2002@gmail.com','2002mihir2002')
+        mail.login('youremail','password')   #you can enter your email and password here
         mail.select('inbox')
 
         result, data = mail.search(None, 'ALL')
